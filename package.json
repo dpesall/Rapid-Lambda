@@ -1,0 +1,31 @@
+{
+  "name": "statisticswebsite",
+  "version": "1.0.0",
+  "description": "A website for presenting a variety of statistical data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpesall/Learn2.git"
+  },
+  "author": "Drew Pesall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpesall/Learn2/issues"
+  },
+  "homepage": "https://github.com/dpesall/Learn2#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1212.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "fast-csv": "^4.3.6",
+    "node.js": "^0.0.1-security",
+    "nodejs": "^0.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "nodemailer": "^6.8.0"
+  }
+}
