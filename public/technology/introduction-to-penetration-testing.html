@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>LEARN&sup2;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" href="../resources/logo.png">
+    <link rel="icon" href="../resources/logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="theme-color" content="#fafafa">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.179.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="page-body" id="page-body-id">
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-sm">
+                    <span class="logo">
+                        <img src="../resources/logo.png" onclick="redirect('home');" class="img-fluid showPointer" style="width: 40px" alt="Responsive image">
+                    </span>
+                Rapid Lambda
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link show-pointer" aria-current="page" onclick="redirect('home', 'technology/introduction-to-penetration-testing');">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active show-pointer" onclick="redirect('technology', 'technology/introduction-to-penetration-testing');">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="pad"></div>
+    <div class="container-fluid articles">
+        <div class="row">
+            <div class="col-sm article-title">
+                Introduction to Penetration Testing
+            </div>
+        </div>
+        <div class="pad"></div>
+        <div class="row">
+            <div class="col-sm article-body">
+                Penetration testing, also known as "pen testing," is the practice of testing a computer system, network, or web application to identify vulnerabilities that an attacker could exploit. These tests are typically performed by security professionals who simulate a cyber attack on a system to evaluate its defenses and identify any weaknesses.<br><br>
+                The goal of penetration testing is to find and exploit vulnerabilities before a malicious actor has the chance to do so. By identifying and addressing these vulnerabilities, organizations can improve their overall security posture and protect their systems and data from potential attacks.<br><br>
+                Penetration testing can be conducted in a variety of ways, including manual testing, automated testing, and "hybrid" testing, which combines both manual and automated techniques. The approach used will depend on the specific goals of the test and the type of system being tested.<br><br>
+                One common method of penetration testing is "black box" testing, in which the tester has no prior knowledge of the system being tested. This approach simulates the perspective of a real-world attacker who is attempting to gain unauthorized access to a system without any insider knowledge.<br><br>
+                Another method is "white box" testing, in which the tester has full knowledge of the system's architecture and configuration. This approach allows the tester to more thoroughly test the system's defenses and identify potential vulnerabilities.<br><br>
+                In addition to identifying vulnerabilities, penetration testing can also help organizations assess the effectiveness of their existing security controls and identify areas for improvement. By regularly conducting penetration tests, organizations can stay one step ahead of potential attackers and ensure that their systems are as secure as possible.<br><br>
+                Overall, penetration testing is an essential component of a robust cybersecurity strategy. By regularly testing their systems and addressing identified vulnerabilities, organizations can protect themselves from potential attacks and maintain the confidentiality, integrity, and availability of their critical assets.
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 5%;"></div>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/generic.js"></script>
+</body>
+</html>

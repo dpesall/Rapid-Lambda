@@ -8,3 +8,8 @@ const YEAR_MILLISECONDS = DAY_MILLISECONDS * 365;
 function log(msg) {
     console.log(msg);
 }
+
+function highlightText(id, hovering) {
+    let element = document.getElementById(id);
+    element.style.color = hovering ? '#69ffe2' : '#ffffff';
+}

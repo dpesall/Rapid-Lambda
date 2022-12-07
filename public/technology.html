@@ -41,10 +41,10 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" onclick="redirect('home', 'technology');">Home</a>
+                                    <a class="nav-link show-pointer" aria-current="page" onclick="redirect('home', 'technology');">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" onclick="redirect('technology', 'technology');">Technology</a>
+                                    <a class="nav-link active show-pointer" onclick="redirect('technology', 'technology');">Technology</a>
                                 </li>
                             </ul>
                         </div>
@@ -54,12 +54,34 @@
         </div>
         <div class="pad"></div>
         <div class="container-fluid articles">
-            <div class="row">
+            <div class="row pad">
                 <div class="col-sm-4 a-right">
-                    December 6th, 2022
+                    December 7th 2022 |
                 </div>
-                <div class="col-sm-8 a-left">
-                    Article 1
+                <div class="col-sm-8 a-left show-pointer">
+                    <span id="tech-article-2" onclick="redirect('technology/cross-site-scripting', 'technology');" onmouseover="highlightText('tech-article-2', true);" onmouseout="highlightText('tech-article-2', false);">
+                        Cross-Site Scripting (XSS)
+                    </span>
+                </div>
+            </div>
+            <div class="row pad">
+                <div class="col-sm-4 a-right">
+                    December 6th, 2022 |
+                </div>
+                <div class="col-sm-8 a-left show-pointer">
+                    <span id="tech-article-1" onclick="redirect('technology/introduction-to-penetration-testing', 'technology');" onmouseover="highlightText('tech-article-1', true);" onmouseout="highlightText('tech-article-1', false);">
+                        Introduction to Penetration Testing
+                    </span>
+                </div>
+            </div>
+            <div class="row pad">
+                <div class="col-sm-4 a-right">
+                    date |
+                </div>
+                <div class="col-sm-8 a-left showPointer">
+                    <span id="tech-article-" onclick="redirect('technology/introduction-to-penetration-testing', 'technology');" onmouseover="highlightText('tech-article-', true);" onmouseout="highlightText('tech-article-', false);">
+                        Title
+                    </span>
                 </div>
             </div>
         </div>

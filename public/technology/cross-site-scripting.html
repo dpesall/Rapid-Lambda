@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>LEARN&sup2;</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" href="../resources/logo.png">
+    <link rel="icon" href="../resources/logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="theme-color" content="#fafafa">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.179.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="page-body" id="page-body-id">
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-sm">
+                    <span class="logo">
+                        <img src="../resources/logo.png" onclick="redirect('home');" class="img-fluid showPointer" style="width: 40px" alt="Responsive image">
+                    </span>
+                Rapid Lambda
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark .bg-transparent">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link show-pointer" aria-current="page" onclick="redirect('home', 'technology/cross-site-scripting');">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active show-pointer" onclick="redirect('technology', 'technology/cross-site-scripting');">Technology</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="pad"></div>
+    <div class="container-fluid articles">
+        <div class="row">
+            <div class="col-sm article-title">
+                Cross-Site Scripting (XSS)
+            </div>
+        </div>
+        <div class="pad"></div>
+        <div class="row">
+            <div class="col-sm article-body">
+                Cross-site scripting (XSS) is a type of cyber attack that involves injecting malicious code into a website or web application. This code is executed by the victim's web browser, allowing the attacker to steal sensitive information, such as login credentials and other personal data. XSS attacks are particularly dangerous because they can be carried out by anyone with a basic understanding of web development, and they can affect a wide range of websites and web applications.
+                <br><br>
+                XSS attacks are made possible by the fact that many websites and web applications use input from users without properly validating or sanitizing it. For example, a website may allow users to submit comments on a blog post, but it fails to properly sanitize the user input, allowing an attacker to inject malicious code into the comment. When other users view the comment, the malicious code is executed by their web browser, allowing the attacker to steal sensitive information.
+                <br><br>
+                There are several different types of XSS attacks, including reflected, stored, and DOM-based XSS attacks. Reflected XSS attacks occur when an attacker injects malicious code into a website by tricking a victim into clicking on a link that contains the code. Stored XSS attacks involve injecting malicious code into a website or web application and storing it there, so that it is executed whenever a user accesses the affected page. DOM-based XSS attacks occur when the malicious code is executed by the victim's web browser, rather than being stored on the website or web application itself.
+                <br><br>
+                To protect against XSS attacks, it is important to properly validate and sanitize user input. This means checking user input for any potentially malicious code, and removing or escaping any code that could be used to carry out an XSS attack. Additionally, it is important to use secure coding practices and to keep web applications up to date with the latest security patches.
+                <br><br>
+                In conclusion, XSS attacks are a serious threat to the security of websites and web applications. By properly validating and sanitizing user input, implementing secure coding practices, and keeping web applications up to date, organizations can protect themselves and their users from these attacks.
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 5%;"></div>
+</div>
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/generic.js"></script>
+</body>
+</html>
