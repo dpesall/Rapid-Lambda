@@ -1,10 +1,18 @@
 require('dotenv').config();
 
 const express = require('express');
+const fs = require('fs');
 const app = express();
 
 app.use(express.static('public/'));
 
-app.listen(8080,()=>{
-    console.log('Web Server running on port', 8080);
+app.get('/user_guide', function(req,res) {
+    fs.readFile('public/user_guide.html',   function (err, data) {
+        res.setHeader('Content-Type', 'text/html');
+        res.send(data);
+    });
+});
+
+app.listen(8081,()=>{
+    console.log('Web Server running on port', 8081);
 });
